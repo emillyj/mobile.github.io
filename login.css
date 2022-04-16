@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #364E68;
+    min-height: 70vh;
+    min-width: 70vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    color: #EBF0F6;
+    font-weight: normal;
+    margin-left: 1px;
+
+}
+h4{
+    color: #EBF0F6;
+    font-weight: normal;
+    margin-left: 1px;
+}
+
+.puppy{
+    display: flex;
+    margin-bottom: 0;
+}
+main.container {
+    background: #EBF0F6;
+    max-width: 100%;
+    min-width: 300px;
+    min-height: 20vh;
+    padding: 2rem;
+    padding-bottom: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 0;
+  
+}
+#username{
+    background-color: #EBF0F6;
+}
+#password{
+    background-color: #EBF0F6;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+    background: #EBF0F6;
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+    background: #364E68;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 70%;
+    background: #364E68;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: #364E68;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+.socialmedia{
+    position: center;
+}
