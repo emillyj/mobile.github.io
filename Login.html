@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    /*colocar na head o link dos icones que serão gerados no favicon (alem de baixar a pasta) e referenciar a pasta criaada (nomeei como Assets/*
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
-    <title>Login Form</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="manifest" href="manifest.json"> 
 </head>
 <body>
-    <h1 style="font-size:7vw">Bem vindo de volta,</h1><br>
-    <h4 style="font-size:4vw">entre para continuar.</h4>
-    <span><img class="puppy" src="./Imagens/puppy02.png" alt="Cachorrinho" width="150px"></span>
+    <h1>Bem-vindo de volta,</h1><br>
+    <h4>Entre para continuar.</h4>
+    <span><img class="puppy" src="./Imagens/puppy02.png" alt="Cachorrinho" width="200px"></span>
     <main class="container">
         <form action="">
             <div class="input-field">
@@ -24,21 +27,23 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="submit" value="Entrar">
+            <button><a href="tutorial1.html">Entrar</a></button>
         </form>
 
-        <div class="footer">
+        <div class="footer"> 
             <span>ou</span>
             <div class="socialmedia">
-                    <a href="#">
-                       <img id="google" src="./img/google.png" alt="Conta google" width="40px">
+                    <a href="https://accounts.google.com/Login/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> 
+                       <img id="google" src="./Imagens/google.png" alt="Conta google" width="50px">
                     </a>
 
-                    <a href="#">
-                        <img id="facebook" src="./img/facebook.png" alt="Facebook" width="40px">
+                    <a href="https://pt-br.facebook.com/login/">
+                        <img style="margin-left: 35px"   id="facebook" src="./Imagens/facebook.png" alt="Facebook" width="50px">
                     </a>
             </div>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
+

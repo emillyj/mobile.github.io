@@ -19,35 +19,43 @@ h1{
     color: #EBF0F6;
     font-weight: normal;
     margin-left: 1px;
-
+    font-size: 40px;
+    margin-left: 20px;
+    padding-top: 30px;   
 }
 h4{
     color: #EBF0F6;
     font-weight: normal;
     margin-left: 1px;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: -15px;
 }
 
 .puppy{
     display: flex;
-    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
 }
+
 main.container {
-    background: #EBF0F6;
-    max-width: 100%;
-    min-width: 300px;
-    min-height: 20vh;
+    background: #DFE3E8;
+    width: 100%;
     padding: 2rem;
-    padding-bottom: 100%;
+    padding-bottom: 190px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    margin-top: 0;
-  
+    border-radius: 30px 30px 0px 0px;
+    margin-top: -5px;
+    font-size: 20px;
 }
+
 #username{
-    background-color: #EBF0F6;
+    background-color: #DFE3E8;
+    padding-top: 100px;
 }
 #password{
-    background-color: #EBF0F6;
+    background-color: #DFE3E8;
 }
 form {
     display: flex;
@@ -69,14 +77,14 @@ form .input-field:first-child {
     width: 70%;
     bottom: -5px;
     left: 0;
-    background: #EBF0F6;
+    background: #DFE3E8;
 }
 
 .input-field .underline::after {
     content: '';
     position: absolute;
     height: 1px;
-    width: 70%;
+    width: 95%;
     bottom: -5px;
     left: 0;
     background: #364E68;
@@ -91,29 +99,41 @@ form .input-field:first-child {
 
 .input-field input {
     outline: none;
-    font-size: 0.9rem;
+    font-size: 35px;
     color: rgba(0, 0, 0, 0.7);
-    width: 70%;
+    width: 80%;
 }
+
 
 .input-field input::placeholder {
     color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
 }
 
-form input[type="submit"] {
-    margin-top: 2rem;
-    padding: 0.4rem;
-    width: 70%;
-    background: #364E68;
+ button {
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:30px;
+    width: 300px;
+    height:55px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    background-color: #4C596A;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+    user-select: none;
     cursor: pointer;
-    color: white;
-    font-size: 0.9rem;
+    transition: background 0.6s;
+    font-family: 'Nunito sans', sans-serif;
     font-weight: 300;
-    border-radius: 4px;
-    transition: all 0.3s ease;
 }
 
-form input[type="submit"]:hover {
+button:hover {
     letter-spacing: 0.5px;
     background: #364E68;
 }
@@ -126,8 +146,9 @@ form input[type="submit"]:hover {
 
 .footer span {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 0.8rem;
+    font-size: 20px;
     text-align: center;
+    padding: 15px;
 }
 
 .footer .social-field {
@@ -157,5 +178,12 @@ form input[type="submit"]:hover {
     background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 .socialmedia{
-    position: center;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
 }
+ #entrar a{
+    text-decoration: none;
+    color: #DFE3E8;
+ }
