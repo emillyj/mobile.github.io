@@ -2,13 +2,33 @@
 <html lang="pt-br">
 <head>
 
+    <meta name="theme-color" content="cor em hexadecimal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="manifest" href="manifest.json"> 
+    <link rel="manifest" href="/manifest.json"> 
 </head>
+
+    <script>
+        window.addEventListener('load', ()=>{
+    registerSW()
+})
+
+async function registerSW(){
+    if('serviceWorker' in navigator){
+        try{
+            await navigator.serviceWorker.register('/sw.js')
+        } catch(e){
+            console.log(`SW registration failed`);
+        }
+    }
+}
+    </script>
+
 <body>
     <h1>Bem-vindo de volta,</h1><br>
     <h4>Entre para continuar.</h4>
@@ -26,7 +46,7 @@
                 <div class="underline"></div>
             </div>
 
-            <button><a href="Tutorial1.html">Entrar</a></button>
+            <button><a href="tutorial1.html">Entrar</a></button>
         </form>
 
         <div class="footer"> 
