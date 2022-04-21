@@ -26,7 +26,8 @@ self.addEventListener('install', function(event){
                 './tutorial3.html',
                 './tutorial3.css',
                 './manifest.json',
-                './index.js'
+                './Login.html',
+                './Login.js',
             ])
         })
     )
