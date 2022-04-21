@@ -1,0 +1,18 @@
+{
+	"short_name": "Puppy Care",
+	"name": "Puppy Care, monitoramento do Pet",
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#DFE3E8",
+	"theme-color": "#DFE3E8",
+	"background_color":"#425971",
+	"background-color":"#425971",
+	"description":"Puppy Care permite o monitoramento do Pet em tempo real e o controle de suas atividades",
+	"icons":[
+		{
+			"src": "assets/android-icon-512x512.png",
+			"type": "assets/png",
+			"sizes":"512x512",
+		}
+	]
+}
