@@ -1,7 +1,7 @@
 {
 	"short_name": "Puppy Care",
 	"name": "Puppy Care, monitoramento do Pet",
-	"start_url": ".",
+	"start_url": "/",
 	"display": "standalone",
 	"theme_color": "#DFE3E8",
 	"theme-color": "#DFE3E8",
