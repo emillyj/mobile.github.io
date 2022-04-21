@@ -23,7 +23,7 @@ self.addEventListener('fetch', async e =>{
     const req = e.request
     const url = new URL(req.url)
 
-    if(url.origin === location.origin){
+    if(url.login === location.origin){
         e.respondWith(cacheFirst(req))
     } else{
         e.respondWith(networkAndCache(req))
