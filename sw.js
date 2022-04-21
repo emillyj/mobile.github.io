@@ -6,9 +6,9 @@ self.addEventListener('install', function(event){
             cache.addAll([
                 './',
                 './manifest.webmanifest',
-                './login.js'
-                './Login.html'
-                './login.css'
+                './login.js',
+                './Login.html',
+                './login.css',
             ])
         })
     )
