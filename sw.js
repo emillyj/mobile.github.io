@@ -7,7 +7,7 @@ self.addEventListener('install', function(event){
                 './',
                 './manifest.webmanifest',
                 './login.js'
-                './login.js'
+                './Login.html'
                 './login.css'
             ])
         })
