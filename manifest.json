@@ -10,7 +10,7 @@
 	"description":"Puppy Care permite o monitoramento do Pet em tempo real e o controle de suas atividades",
 	"icons":[
 		{
-			"src": "./assets/android-icon-512x512.png",
+			"src": "assets/android-icon-512x512.png",
 			"type": "assets/png",
 			"sizes":"512x512",
 		}
