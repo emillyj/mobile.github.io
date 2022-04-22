@@ -1,14 +1,15 @@
-const cacheName = 'Puppy Care'
+cconst cacheName = 'Puppy Care'
 
 self.addEventListener('install', function(event){
     event.waitUntil(
         caches.open(cacheName).then(function (cache){
             cache.addAll([
-                 './',
-                './mobile.github.io/manifest.json',
-                './mobile.github.io/login.css',
-                './mobile.github.io/login.js',
-                './mobile.github.io/Login.html',
+                './',
+                './Login.html',
+                './manifest.json',
+                './login.js',
+                './login.css',
+
             ])
         })
     )
@@ -48,3 +49,4 @@ async function networkAndCache(req){
         return cached
     }
 }
+
