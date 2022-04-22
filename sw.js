@@ -4,8 +4,8 @@ self.addEventListener('install', function(event){
     event.waitUntil(
         caches.open(cacheName).then(function (cache){
             cache.addAll([
-                '../mobile.github.Login.html',
-                './manifest.webmanifest',
+                '../mobile.github/',
+                './manifest.json',
                 './login.js',
                 './Login.html',
                 './login.css',
