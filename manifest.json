@@ -43,7 +43,7 @@
 	   "sizes": "144x144",
 	   "type": "assets/png",
 	   "density": "3.0",
-	    "purpose": "any"
+	   "purpose": "any"
 
 	  },
 	  {
@@ -51,8 +51,14 @@
 	   "sizes": "192x192",
 	   "type": "assets/png",
 	   "density": "4.0",
-	    "purpose": "any"
-	  }
+	   "purpose": "any"
+	  },
+	  {
+	   "src": "assets/android-icon-512x512",
+	   "sizes": "512x512",
+	   "type": "assets/png",
+	   "purpose": "any"
+	  },
 	 ]
 	}
 
