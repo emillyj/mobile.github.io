@@ -8,6 +8,12 @@
 	"background_color":"#425971",
 	"background-color":"#425971",
 	"description":"Puppy Care permite o monitoramento do Pet em tempo real e o controle de suas atividades",
+},
+	"repository": {
+		"type":"git",
+		"url": "git+https://emillyj.github.io/mobile.github.io/",
+	}
+
 	"icons":[
 		
 	 {
