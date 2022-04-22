@@ -5,8 +5,8 @@ self.addEventListener('install', function(event){
         caches.open(cacheName).then(function (cache){
             cache.addAll([
                 './'
-                '../mobile.github/',
-                './manifest.json.io',
+                '../mobile.github.io/',
+                './manifest.json.',
                 './login.js',
                 './Login.html',
                 './login.css',
