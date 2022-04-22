@@ -15,35 +15,35 @@
 	   "sizes": "36x36",
 	   "type": "assets/png",
 	   "density": "0.75",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  },
 	  {
 	   "src": "assets/android-icon-48x48.png",
 	   "sizes": "48x48",
 	   "type": "assets/png",
 	   "density": "1.0",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  },
 	  {
 	   "src": "assets/android-icon-72x72.png",
 	   "sizes": "72x72",
 	   "type": "assets/png",
 	   "density": "1.5",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  },
 	  {
 	   "src": "assets/android-icon-96x96.png",
 	   "sizes": "96x96",
 	   "type": "assets/png",
 	   "density": "2.0",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  },
 	  {
 	   "src": "assets/android-icon-144x144.png",
 	   "sizes": "144x144",
 	   "type": "assets/png",
 	   "density": "3.0",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 
 	  },
 	  {
@@ -51,13 +51,13 @@
 	   "sizes": "192x192",
 	   "type": "assets/png",
 	   "density": "4.0",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  },
 	  {
 	   "src": "assets/android-icon-512x512.png",
 	   "sizes": "512x512",
 	   "type": "assets/png",
-	   "purpose": "any"
+	   "purpose maskable": "any"
 	  }
 	 ]
 	}
