@@ -7,8 +7,8 @@ self.addEventListener('install', function(event){
                 './',
                 './Login.html',
                 './manifest.json',
-                './login.js'
-                './sw.js'
+                './login.js',
+                './sw.js',
             ])
         })
     )
