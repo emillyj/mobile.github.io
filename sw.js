@@ -1,4 +1,4 @@
-cconst cacheName = 'Puppy Care'
+const cacheName = 'Puppy Care'
 
 self.addEventListener('install', function(event){
     event.waitUntil(
