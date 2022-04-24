@@ -14,28 +14,37 @@
 </head>
 <body>
 
+    <div class="instrucoes">
+         <img class="logo" src='./Imagens/logo.png' alt='logo' width='70px'>    
 
-    <div class="conect">   
-      <div class='conect-content'>  
-         <h1 class='conect-titulo'>"App" Deseja  
-  Usar Bluetooth</h1>  
-        <p class='conect-descricao'>"App" precisa desta permissão para se conectar a coleira </p>
-        <button id="connect" type="button">Conectar</button>
-        <button id="disconnect" type="button"> Desconectar</button>
+         <div class='conect-content'>  
+            <div class="balao">
+                <p>Agora, é só clicar em conectar</p>
+                <p>e novamente em continuar.</p> 
+                <p>Você também vai poder <b>desconectar</b></p>
+                <p>o Puppy Care do seu bluetooth</p>
+                <p>quando preferir.</p>
+            </div>
+         </div>
+
+        <img class="mascote" src='./Imagens/puppy02.png' alt='Mascote' width='230px'>
+
+        <div class="btn">
+            <button>Conectar</button>
+            <button> Desconectar</button>
+            <button> Continuar</button>
         </div>    
     </div>  
 
+    <div id="terminal"></div>
 
+    <form id="send-form">
+        <input id="input" type="text">
+        <button type="submit">Enviar</button>
+    </form>
 
-<div id="terminal"></div>
-
-<form id="send-form">
-    <input id="input" type="text">
-    <button type="submit">Send</button>
-</form>
-
-<script src="main.js"></script>
-<script src="companion.js" data-service-worker="sw.js"></script>
+    <script src="main.js"></script>
+    <script src="companion.js" data-service-worker="sw.js"></script>
 
 </body>
 </html>
