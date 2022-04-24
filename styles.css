@@ -9,3 +9,14 @@
 #terminal div.in {
     color: blue;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #425971;
+    font-family:'Nunito Sans', sans-serif;
+}
