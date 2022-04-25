@@ -1,38 +1,38 @@
-// Получение ссылок на элементы UI
+//obter referências aos elementos da interface do usuário
 let connectButton = document.getElementById('connect');
 let disconnectButton = document.getElementById('disconnect');
 let terminalContainer = document.getElementById('terminal');
 let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
 
-// Подключение к устройству при нажатии на кнопку Connect
+// Conecte-se ao dispositivo ao clicar no botão Conectar
 connectButton.addEventListener('click', function() {
   connect();
 });
 
-// Отключение от устройства при нажатии на кнопку Disconnect
+// Desconectar ao dispositivo ao clicar no botão Desconectar
 disconnectButton.addEventListener('click', function() {
   disconnect();
 });
 
-// Обработка события отправки формы
+// Manipula o evento de envio do formulário
 sendForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Предотвратить отправку формы
-  send(inputField.value); // Отправить содержимое текстового поля
-  inputField.value = '';  // Обнулить текстовое поле
-  inputField.focus();     // Вернуть фокус на текстовое поле
+  event.preventDefault(); // Impedir o envio de formulários
+  send(inputField.value); // Enviar conteúdo do campo de texto
+  inputField.value = '';  // Redefinir campo de texto
+  inputField.focus();     // Retornar o foco ao campo de texto
 });
 
-// Кэш объекта выбранного устройства
+// Cache de objeto de dispositivo selecionado
 let deviceCache = null;
 
-// Кэш объекта характеристики
+// Cache de objeto de recurso
 let characteristicCache = null;
 
-// Промежуточный буфер для входящих данных
+// Buffer intermediário para dados de entrada
 let readBuffer = '';
 
-// Запустить выбор Bluetooth устройства и подключиться к выбранному
+// Inicia o seletor de dispositivos Bluetooth e conecta ao selecionado
 function connect() {
   return (deviceCache ? Promise.resolve(deviceCache) :
       requestBluetoothDevice()).
@@ -41,7 +41,7 @@ function connect() {
       catch(error => log(error));
 }
 
-// Запрос выбора Bluetooth устройства
+// Solicitação para selecionar um dispositivo Bluetooth
 function requestBluetoothDevice() {
   log('Requesting bluetooth device...');
 
@@ -58,7 +58,7 @@ function requestBluetoothDevice() {
       });
 }
 
-// Обработчик разъединения
+// Desconecta o manipulador
 function handleDisconnection(event) {
   let device = event.target;
 
@@ -70,7 +70,7 @@ function handleDisconnection(event) {
       catch(error => log(error));
 }
 
-// Подключение к определенному устройству, получение сервиса и характеристики
+// Conecte-se a um dispositivo específico, obtenha serviço e características
 function connectDeviceAndCacheCharacteristic(device) {
   if (device.gatt.connected && characteristicCache) {
     return Promise.resolve(characteristicCache);
@@ -97,7 +97,7 @@ function connectDeviceAndCacheCharacteristic(device) {
       });
 }
 
-// Включение получения уведомлений об изменении характеристики
+ //Habilitando o recebimento de notificações sobre mudanças nas características
 function startNotifications(characteristic) {
   log('Starting notifications...');
 
@@ -109,7 +109,7 @@ function startNotifications(characteristic) {
       });
 }
 
-// Получение данных
+// Obter dados
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
 
@@ -128,18 +128,18 @@ function handleCharacteristicValueChanged(event) {
   }
 }
 
-// Обработка полученных данных
+// Processamento de dados recebidos
 function receive(data) {
   log(data, 'in');
 }
 
-// Вывод в терминал
+// Saída para o terminal
 function log(data, type = '') {
   terminalContainer.insertAdjacentHTML('beforeend',
       '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
 }
 
-// Отключиться от подключенного устройства
+// Desconecta do dispositivo conectado
 function disconnect() {
   if (deviceCache) {
     log('Disconnecting from "' + deviceCache.name + '" bluetooth device...');
@@ -165,7 +165,7 @@ function disconnect() {
   deviceCache = null;
 }
 
-// Отправить данные подключенному устройству
+//Envia dados para o dispositivo conectado
 function send(data) {
   data = String(data);
 
@@ -193,7 +193,7 @@ function send(data) {
   log(data, 'out');
 }
 
-// Записать значение в характеристику
+// Escreve o valor na característica
 function writeToCharacteristic(characteristic, data) {
   characteristic.writeValue(new TextEncoder().encode(data));
 }

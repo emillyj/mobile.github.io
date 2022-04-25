@@ -6,7 +6,7 @@
 
 body {
 	background-color: #425971;
-	font-family:'Nunito Sans', sans-serif;
+	font-family:'Nunito', sans-serif;
 }
 
 .instrucoes .logo {
@@ -67,7 +67,7 @@ body {
 	user-select: none;
 	cursor: pointer;
 	transition: background 0.6s;
-	font-family: 'Nunito sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-weight: regular;
 	}
 
