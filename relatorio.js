@@ -14,7 +14,7 @@ var myChart = new Chart(ctx, {
     options: {
         elements:{
             line:
-             tension:30
+             tension:0
         }
         scales: {
             yAxes: [{
