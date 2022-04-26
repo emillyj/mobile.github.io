@@ -6,7 +6,7 @@
 
 body {
 	background-color: #425971;
-	font-family:'Nunito', sans-serif;
+	font-family:'Nunito Sans', sans-serif;
 }
 
 .instrucoes .logo {
@@ -24,8 +24,7 @@ body {
     left: -15px;
 	right: 0;
 	margin: auto;
-	top:15px;
-	box-shadow: 25px 20px 20px rgba(26,35,44,0.2);    
+	top:15px;    
 }
 
 .balao p {
@@ -57,7 +56,7 @@ body {
 	top:720px;
 	width: 280px;
 	height:55px;
-	color: #ffffff;
+	color: #DFE3E8;
 	border-radius: 15px;
 	font-size: 1.5rem;
 	background-color: #98CCD3;
@@ -67,11 +66,14 @@ body {
 	user-select: none;
 	cursor: pointer;
 	transition: background 0.6s;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito sans', sans-serif;
 	font-weight: regular;
 	}
-
-a {
+.btn a{
+	text-decoration: none;
+	color: #DFE3E8;
+}
+.pular {
 	cursor: pointer;
 	color: white;
 	font-size: 1.3rem;

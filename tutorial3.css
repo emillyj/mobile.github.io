@@ -87,3 +87,19 @@ body {
   font-family: 'Nunito sans', sans-serif;
   font-weight: regular;
 }
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+.botão{
+  display: inline-block;
+}
+
+label {
+    font: 19px 'Nunito', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}

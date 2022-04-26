@@ -1,53 +1,62 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-
-<head> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
   
-  <meta charset="utf-8"> 
-  <link rel="stylesheet" type="text/css" href="cadastro.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-  <title>Cadastro</title>
-                
-</head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Cadastro TESTE</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="manifest" href="/manifest.json"> 
+  
+</head>
+<body>
+    <h1>Bem-vindo,</h1><br>
+    <h4>Cadastre-se para continuar.</h4>
+    <span><img class="puppy" src="./Imagens/puppy02.png" alt="Cachorrinho" width="200px"></span>
+    <main class="container">
+        <form action="">
+            <div class="input-field">
+                <input type="text" name="username" id="username"
+                    placeholder="Nome" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="text" name="email" id="email"
+                    placeholder="E-mail" required>
+                <div class="underline"></div>
+            </div>
+          <div class="input-field">
+                <input type="password" name="senha" id="senha"
+                    placeholder="Crie uma senha" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="senha" id="confsenha"
+                    placeholder="Confirme a senha" required>
+                <div class="underline"></div>
+            </div>
+            <button id="entrar"><a href="home.html">Cadastrar</a></button>
+        </form>
 
-<body> 
-  <div class='bemvindo'> 
-    <h1>Bem-vindo,</h1> 
-    <h2>cadastre-se para continuar.</h2> 
-    <span><img class="puppy" src="./Imagens/puppy02.png" alt="Cachorrinho" width="150px"></span>
+        <div class="footer"> 
+            <span>ou</span>
+            <div class="socialmedia">
+                    <a href="https://accounts.google.com/Login/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> 
+                       <img id="google" src="./Imagens/google.png" alt="Conta google" width="50px">
+                    </a>
 
-  </div> 
-  <form action="">
-<main class=containerb>
-  <div class="infocadastro"> 
-    <input type="texto" name="field" placeholder="Nome" class="texto"> 
-    <input type="email" name="field" placeholder="E-mail" class="texto"> 
-    <input type="texto" name="field" placeholder="Crie uma senha" class="texto"> 
-    <input type="texto" name="field" placeholder="Confirme a senha" class="texto"> 
-    <button class="btn"> Cadastrar </button>
-  </div> 
-
-  <div class="Alternative"> 
-    <span>ou</span> 
-  </div> 
-
-  <div class="socialmedia"> 
-    <a href="https://accounts.google.com/Login/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> 
-    <img src="./Imagens/google.png" alt="Conta google" width="50px"> 
-    <a href="https://pt-br.facebook.com/login/"> 
-    <img src="./Imagens/facebook.png" alt="Facebook" width="50px"> 
-    </a> 
-  </div> 
-
-  <div class="termos"> 
-    <h3> 
-    Ao criar uma conta, você concorda com os <a href=”termos.html”>Termos de Serviço</a> do Puppycare e confirma que leu a nossa <a href=”termos.html”>Política de Privacidade. </a>
-    </h3> 
-  </div> 
-</main>
-<form action="">
-</body> 
-</html> 
+                    <a href="https://pt-br.facebook.com/login/">
+                        <img style="margin-left: 35px"   id="facebook" src="./Imagens/facebook.png" alt="Facebook" width="50px">
+                    </a>
+            </div>
+        </div>
+      
+        <div class="termos"> 
+          <h3> 
+          Ao criar uma conta, você concorda com os <a href=”termos.html”>Termos de Serviço</a> do Puppycare e confirma que leu a nossa <a href=”termos.html”>Política de Privacidade. </a>
+          </h3> 
+        </div> 
+    </main>
+</body>
+</html>

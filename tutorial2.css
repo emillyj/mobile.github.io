@@ -24,7 +24,6 @@ body {
     left: 0px;
 	right: 0;
 	margin: auto; 
-	box-shadow: 25px 20px 20px rgba(26,35,44,0.2);  
 }
 
 .balao p {
@@ -70,10 +69,14 @@ body {
 	font-family: 'Nunito sans', sans-serif;
 	font-weight: regular;
 }
-
+.btn a{
+  text-decoration: none;
+  color: white;
+}
 .mascote {
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
 	top:400px;
+}

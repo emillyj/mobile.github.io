@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #4D6279;
+    min-height: 70vh;
+    min-width: 70vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+.fotodopet{
+    background-image: url(./Imagens/cadu03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 490px;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 80px 80px;
+    margin-top: -5px;
+    font-size: 20px;
+}
+h1{
+  color: white;
+  font-size: 70px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+h3{
+  color: #DFE3E8;
+  margin-left: 15px;
+}
+h4{
+  color: #DFE3E8;
+  margin-left: 15px;
+}
+.btn{
+  display: block;
+  padding: 10px 8px;
+  width: 200px;
+  color: #364E68;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  background-color: #DFE3E8;
+  margin-bottom: 15px;
+  border: none;
+  text-align: center;
+  user-select: none;
+  transition: background 0.6s;
+  font-family: 'Nunito', sans-serif;
+  font-weight: regular;
+}
+.btn: hover{
+  background-color: #364E68;
+  color: #DFE3E8;
+}
+.escolha{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.escolha a{
+  text-decoration: none;
+  color: #364E68;
+}
+.fotodopet .editar{
+  position: absolute;
+  bottom: 30%;
+  right: 16px;
+}
