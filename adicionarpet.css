@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
@@ -12,22 +13,12 @@ body{
     justify-content: center;
     background-color: #DFE3E8;
     font-family: 'Nunito', sans-serif;
+}
 
-}
-.icon{
-  position: absolute;
-  top: 8px;
-  left: 16px;    
-}
-.edit{
-position: absolute;
-top: 8px;
-right: 16px;   
-}
 form{
-    position: absolute;
-    top: 15%;
-    left: 25%;
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
 }
 .foto{
     align-content: center;
@@ -37,7 +28,12 @@ form{
     border:0;
     text-align: center;
     justify-content: center;
-
+    position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+    top: 100px;
+  
 }
 .single-input{
     position: relative;
@@ -74,18 +70,14 @@ form{
     font-size: 12px;
     color: #364E68;
 }
- button {
-    text-decoration: none;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top:30px;
-    width: 250px;
-    height:55px;
+.botao{
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    width: 150px;
     color: #ffffff;
-    border-radius: 15px;
-    font-size: 1.6rem;
+    border-radius: 10px;
+    font-size: 1rem;
     background-color: #364E68;
     margin-bottom: 15px;
     border: none;
@@ -93,11 +85,15 @@ form{
     user-select: none;
     cursor: pointer;
     transition: background 0.6s;
-    font-family: 'Nunito sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-button:hover {
-    letter-spacing: 0.5px;
-    background: #4C596A;
+.botao: hover{
+    background: #000;
 }
