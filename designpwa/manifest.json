@@ -5,12 +5,15 @@
   "orientation": "any",
   "start_url": "./index.html",
   "scope": "./",
-  "name": "Web Bluetooth Terminal",
+  "name": "Puppy Care",
   "prefer_related_applications": true,
-  "short_name": "Web Terminal",
-  "description": "Progressive Web Application for serial communication with your own Bluetooth Low Energy (Smart) devices",
-  "theme_color": "#2196f3",
-  "background_color": "#ffffff",
+  "name": "Puppy Care",
+  "description":"O Puppy Care permite o monitoramento do Pet em tempo real e o controle de suas atividades",
+  "theme_color": "#DFE3E8",
+  "theme-color": "#DFE3E8",
+  "background_color":"#425971",
+  "background-color":"#425971",
+
   "icons": [
     {
       "src": "icons/android-chrome-36x36.png",
