@@ -6,6 +6,7 @@
   "start_url": "./",
   "scope": "./",
   "name": "Web Bluetooth Terminal",
+  "prefer_related_applications": true,
   "short_name": "Web Terminal",
   "description": "Progressive Web Application for serial communication with your own Bluetooth Low Energy (Smart) devices",
   "theme_color": "#2196f3",
