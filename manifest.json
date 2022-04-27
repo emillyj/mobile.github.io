@@ -3,7 +3,6 @@
   "lang": "en",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/",
   "scope": "./",
   "name": "Puppy Care",
   "prefer_related_applications": true,
