@@ -3,7 +3,7 @@
   "lang": "en",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "name": "Web Bluetooth Terminal",
   "prefer_related_applications": true,
