@@ -4,7 +4,7 @@ toolbox.precache([
   'css/normalize.css',
   'css/styles.css',
   'js/BluetoothConnection.js',
-  'js/companion.js',
+  'companion.js',
   'js/main.js',
   'index.html',
 ]);
