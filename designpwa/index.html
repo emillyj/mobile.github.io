@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
 	    
-		<meta name="theme-color" content="#425971"/>
+		
 		<link rel="manifest" href="manifest.json">
 		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -15,11 +15,70 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+		
+		
+		
+		
 		
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--COLOQUEI O ESTILO AQUI NO HTML, MAS PODEM DEIXAR EM ARQUIVO SEPARADO-->
+	<style>
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 60px;
+	  height: 34px;
+	}
+
+	.switch input { 
+	  opacity: 0;
+	  width: 0;
+	  height: 0;
+	}
+
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #ccc;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	input:checked + .slider {
+	  background-color: #2196F3;
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+	div.status{
+		background-color:green;
 	
+	}
+	</style>
 	<body>
 		<!--SWITCH-->
 		<label class="switch">
@@ -30,8 +89,8 @@
 		<label for="BarraA" id=lbl_BarraA>Medida SIGNIFICATIVA:</label>
 		<meter id="BarraA" value="2" min="0" max="10">2 out of 10</meter><br>
 		<!--BOTÕES PARA CONEXÃO E DESCONEXÃO-->
-		<button id="connect" type="button"><a href="tutorial3.html">Conectar</a></button>
-		<button id="disconnect" type="button">Desconectar</button>
+		<button id="connect" type="button">Connect</button>
+		<button id="disconnect" type="button">Disconnect</button>
 		<!--ÁREA DE STATUS-->
 		<div id="status" class="status">
 			<label id="saida">Área de status</label>
