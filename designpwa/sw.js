@@ -7,6 +7,8 @@ toolbox.precache([
   'js/companion.js',
   'js/main.js',
   'index.html',
+  'tutorial.3.html',
+  'css/tutorial.3.css'
 ]);
 
 toolbox.router.default = toolbox.networkFirst;
