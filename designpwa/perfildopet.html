@@ -7,16 +7,17 @@
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
     <title>Perfil do Pet</title>
     <link rel="stylesheet" href="perfildopet.css">
-    
+    <link rel="manifest" href="/manifest.json"> 
+  
 </head>
 <body>
 
   <div class="fotodopet">
-    <div class="Icon">
-      <a href="home.html"><img src="./Imagens/voltarbranco.png" alt="voltar" width="40px"></a>
+    <div class="icon">
+      <a href="home.html"><img src="../Imagens/volta.png" alt="voltar" width="40px"></a>
     </div>
     <div class="editar">
-      <img src="./Imagens/editar.png" alt="editar" width="50px">
+      <a href="editar.html"><img src="../Imagens/editar.png" alt="editar" width="50px"></a>
     </div>
   </div>
   <h1>Cadu</h1>
@@ -25,7 +26,11 @@
 
   <div class="escolha"> 
     <button class="btn"><a href="batimentos.html">Monitoramento</button>
-    <button class="btn"><a href="atividades.html">Desconectar</a></button> 
+    <button class="btn"><a href="atividades.html">Atividades</a></button> 
+
+      <label class="switch">
+        <button id="disconnect" type="button">Desconectar</button>
+      </label>
   </div>
 </body>
 </html>
