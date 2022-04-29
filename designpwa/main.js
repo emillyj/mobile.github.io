@@ -50,6 +50,15 @@ disconnectButton.addEventListener('click', function() {
   disconnect();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var mover = document.getElementById("mover");
+    var painel = document.getElementById("painel");
+
+    mover.addEventListener("click", function (event) {
+      painel.disconnect += 100;
+    });
+});
+
 
 
 // Cache de objeto de dispositivo selecionado
