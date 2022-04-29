@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
     painel.disconnect += 100;
 });
 
-
 // Cache de objeto de dispositivo selecionado
 let deviceCache = null;
 
