@@ -51,21 +51,6 @@ disconnectButton.addEventListener('click', function() {
 });
 
 
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    var mover = document.getElementById("mover");
-    var painel = document.getElementById("painel");
-
-    mover.addEventListener("click", function (event) {
-      painel.disconnect += 100;
-});
-
-
-
-
-
 // Cache de objeto de dispositivo selecionado
 let deviceCache = null;
 
@@ -242,5 +227,5 @@ function send(data) {
 
 // Escreve o valor na característica
 function writeToCharacteristic(characteristic, data) {
-  characteristic.writeValue(new TextEncoder().encode(data);
+  characteristic.writeValue(new TextEncoder().encode(data));
 }
