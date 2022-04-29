@@ -234,5 +234,5 @@ function send(data) {
 
 // Escreve o valor na característica
 function writeToCharacteristic(characteristic, data) {
-  characteristic.writeValue(new TextEncoder().encode(data));
+  characteristic.writeValue(new TextEncoder().encode(data)
 }
