@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="styles.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="index.css">
 	    
 		
 		<link rel="manifest" href="manifest.json">
@@ -14,99 +15,47 @@
 		<link rel="shortcut icon" href="icons/favicon.ico">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		
-		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
 	</head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--COLOQUEI O ESTILO AQUI NO HTML, MAS PODEM DEIXAR EM ARQUIVO SEPARADO-->
-	<style>
-	.switch {
-	  position: relative;
-	  display: inline-block;
-	  width: 60px;
-	  height: 34px;
-	}
 
-	.switch input { 
-	  opacity: 0;
-	  width: 0;
-	  height: 0;
-	}
-
-	.slider {
-	  position: absolute;
-	  cursor: pointer;
-	  top: 0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-	  background-color: #ccc;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-
-	.slider:before {
-	  position: absolute;
-	  content: "";
-	  height: 26px;
-	  width: 26px;
-	  left: 4px;
-	  bottom: 4px;
-	  background-color: white;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-
-	input:checked + .slider {
-	  background-color: #2196F3;
-	}
-
-	input:focus + .slider {
-	  box-shadow: 0 0 1px #2196F3;
-	}
-
-	input:checked + .slider:before {
-	  -webkit-transform: translateX(26px);
-	  -ms-transform: translateX(26px);
-	  transform: translateX(26px);
-	}
-	div.status{
-		background-color:green;
-	
-	}
-	</style>
 	<body>
-		<main>
-   			<div class="passos">
-	       		<img src='./Imagens/bluetooth.png' alt="Icone Bluetooth" width="150px">
+   		<div class="passos">
+   			<div class="flex">
+	       		<img class="bt"src='../Imagens/bt.png' alt="Icone Bluetooth" width="85px">
 
-	       		<h2>Clque em continuar no botão para conectar-se a coleira do seu pet.</h2>
+	       		<h1>Clique no botão para
+	       		conectar-se a coleira
+	       		do seu pet.<h1/>
+	       	</div>
 
 	       		<button id="connect" type="button">Conectar</button>
 				<button id="disconnect" type="button">Desconectar</button>
-				<!--ÁREA DE STATUS-->
-				<div id="status" class="status">
-				<label id="saida">Verificando conexão...</label>
-			</div>
-        
-        <h4>Você poderá retornar a essa página se desejar desconectar o bluetooth.</h4>
+			<h3>Você poderá retornar a essa</h3>
+        	<h3>página se desejar desconectar</h3>
+        	<h3>o bluetooth.</h3>
 
-        <!--SWITCH-->
-		<label class="switch">
-			<input type="checkbox" id="SwitchA"  onClick="MudouSwitch()">
-			<span class="slider"></span>
-		</label>
 
-        <h5>Deslize para ativar a coleira, em seguida clique em continuar.</h5>
-        
+        	<div class="ligar">
+        		<h2>Deslize para ativar a<br>coleira, em seguida</br>clique em continuar.</h2>
 
-      <button class="btn"><a href='tutorial.final.html'> Continuar </a></button>
-    </main>
+				<label class="switch">
+					<input type="checkbox" id="SwitchA"  onClick="MudouSwitch()">
+					<span class="slider"></span>
+				</label>
+	        </div>
+		</div>
+    </div>
+
+    	<button class="btn"><a href='tutorial.final.html'> Continuar </a></button>
+
+
+    <!--ÁREA DE STATUS-->
+		<div id="status" class="status">
+			<label id="saida">Verificando...</label>
+		</div>
 
     	<script src="main.js"></script>
 		<script src="js/companion.js" data-service-worker="sw.js"></script>
-</body>
-		
+	</body>	
 </html>
 	

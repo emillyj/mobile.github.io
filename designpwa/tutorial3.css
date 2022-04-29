@@ -12,6 +12,9 @@ body {
 
 .passos{
      display: flex;
+     position: relative;
+     top: 50%;
+     left: 50%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
