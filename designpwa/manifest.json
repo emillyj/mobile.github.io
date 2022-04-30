@@ -3,14 +3,14 @@
   "lang": "en",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/mobile.github.io/designpwa/",
+  "start_url": "/mobile.github.io/designpwa/inicio.html",
   "scope": "./",
   "name": "Puppy Care",
   "short_name": "Puppy Care",
   "description": "Puppy Care, Monitoramento da saúde do seu Pet",
   "theme_color": "#DFE3E8",
   "background_color": "#425971",
-  "id":"/mobile.github.io/designpwa/",
+  "id":"/mobile.github.io/designpwa/inicio.html",
   "icons": [
     {
       "src": "icons/android-chrome-36x36.png",
