@@ -12,13 +12,13 @@ function MudouSwitch()
 {
 	if(switchQualquer.checked)
 	{
-		send('#Coleira ativada');//lá no arduino tem que capturar os valores
+		send('#g1');//lá no arduino tem que capturar os valores
 		switchQualquer.removeAttr('checked');
 		
 	}
 	else
 	{
-		send('#Coleira desativada');//lá no arduino tem que capturar os valores
+		send('#g0');//lá no arduino tem que capturar os valores
 		switchQualquer.attr('checked')	
 		
 	}
@@ -71,13 +71,13 @@ function connect() {
 
 // Solicitação para selecionar um dispositivo Bluetooth
 function requestBluetoothDevice() {
-  log('Solicitando disposito Bluetooth');
+  log('Requesting bluetooth device...');
 
   return navigator.bluetooth.requestDevice({
     filters: [{services: [0xFFE0]}],
   }).
       then(device => {
-        log('"' + device.name + '" Dispositivo bluetooth selecionado');
+        log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
@@ -127,11 +127,11 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 // Habilitando o recebimento de notificações sobre a mudança da característica
 function startNotifications(characteristic) {
-  log('Starting notifications...');
+  log('Iniciando notificações...');
 
   return characteristic.startNotifications().
       then(() => {
-        log('Notifications started');
+        log('Notificações iniciadas');
         characteristic.addEventListener('characteristicvaluechanged',
             handleCharacteristicValueChanged);
       });
@@ -166,17 +166,17 @@ function log(data, type = '') {
 // Desconecta do dispositivo conectado
 function disconnect() {
   if (deviceCache) {
-    log('Disconnecting from "' + deviceCache.name + '" bluetooth device...');
+    log('Disconnecting from "' + deviceCache.name + '" dispositivo bluetooth...');
     deviceCache.removeEventListener('gattserverdisconnected',
         handleDisconnection);
 
     if (deviceCache.gatt.connected) {
       deviceCache.gatt.disconnect();
-      log('"' + deviceCache.name + '" bluetooth device disconnected');
+      log('"' + deviceCache.name + '" dispositivo bluetooth desconectado');
     }
     else {
       log('"' + deviceCache.name +
-          '" bluetooth device is already disconnected');
+          '" dispositivo bluetooth já está desconectado');
     }
   }
 
@@ -196,7 +196,7 @@ function send(data) {
 	try
 	{
 	  if (!data || !characteristicCache) {
-		log("Conectou???",'out');
+		log("Você precisa clicar em conectar primeiro",'out');
 		return;
 	  }
 
