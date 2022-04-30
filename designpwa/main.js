@@ -91,7 +91,7 @@ function handleDisconnection(event) {
   let device = event.target;
 
   log('"' + device.name +
-      '" bluetooth device disconnected, trying to reconnect...');
+      '" Dsipositivo bluetooth desconectado, tentando reconectar...');
 
   connectDeviceAndCacheCharacteristic(device).
       then(characteristic => startNotifications(characteristic)).
@@ -104,27 +104,27 @@ function connectDeviceAndCacheCharacteristic(device) {
     return Promise.resolve(characteristicCache);
   }
 
-  log('Connecting to GATT server...');
+  log('Conectando ao bluetooth...');
 
   return device.gatt.connect().
       then(server => {
-        log('GATT server connected, getting service...');
+        log('Bluetooth conectado, recebendo dados do "Puppy Care"...');
 
         return server.getPrimaryService(0xFFE0);
       }).
       then(service => {
-        log('Service found, getting characteristic...');
+        log('Dados encontrados, Atualizando informações...');
 
         return service.getCharacteristic(0xFFE1);
       }).
       then(characteristic => {
-        log('Characteristic found');
+        log('Informações atualizadas');
         characteristicCache = characteristic;
 
         return characteristicCache;
       });
 }
-
+____________________________________________________________________
 // Habilitando o recebimento de notificações sobre a mudança da característica
 function startNotifications(characteristic) {
   log('Iniciando notificações...');
@@ -162,7 +162,7 @@ function log(data, type = '') {
   //    '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
   terminalContainer.innerHTML=data;
 }
-
+__________________________________________________________________________
 // Desconecta do dispositivo conectado
 function disconnect() {
   if (deviceCache) {
@@ -174,7 +174,7 @@ function disconnect() {
       deviceCache.gatt.disconnect();
       log('"' + deviceCache.name + '" Dispositivo bluetooth desconectado');
     }
-    __________________________________________________________________
+
     else {
       log('"' + deviceCache.name +
           '" dispositivo bluetooth já está desconectado');
