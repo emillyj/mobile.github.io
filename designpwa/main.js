@@ -12,13 +12,13 @@ function MudouSwitch()
 {
 	if(switchQualquer.checked)
 	{
-		send('#g1');//lá no arduino tem que capturar os valores
+		send('Coleira ativada');//lá no arduino tem que capturar os valores
 		switchQualquer.removeAttr('checked');
 		
 	}
 	else
 	{
-		send('#g0');//lá no arduino tem que capturar os valores
+		send('Coleira desativada');//lá no arduino tem que capturar os valores
 		switchQualquer.attr('checked')	
 		
 	}
@@ -127,11 +127,11 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 // Habilitando o recebimento de notificações sobre a mudança da característica
 function startNotifications(characteristic) {
-  log('Starting notifications...');
+  log('Iniciando notificações');
 
   return characteristic.startNotifications().
       then(() => {
-        log('Notifications started');
+        log('Notificações iniciadas');
         characteristic.addEventListener('characteristicvaluechanged',
             handleCharacteristicValueChanged);
       });
@@ -172,11 +172,11 @@ function disconnect() {
 
     if (deviceCache.gatt.connected) {
       deviceCache.gatt.disconnect();
-      log('"' + deviceCache.name + '" bluetooth device disconnected');
+      log('"' + deviceCache.name + '"dispositivo bluetooth desconectado');
     }
     else {
       log('"' + deviceCache.name +
-          '" bluetooth device is already disconnected');
+          '" dispositivo bluetooth já está desconectado');
     }
   }
 
@@ -196,7 +196,7 @@ function send(data) {
 	try
 	{
 	  if (!data || !characteristicCache) {
-		log("Conectou???",'out');
+		log("Você precisa conectar o bluetooth primeiro",'out');
 		return;
 	  }
 
