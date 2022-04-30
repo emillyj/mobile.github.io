@@ -12,13 +12,13 @@ function MudouSwitch()
 {
 	if(switchQualquer.checked)
 	{
-		send('Coleira ativada');//lá no arduino tem que capturar os valores
+		send('#g1');//lá no arduino tem que capturar os valores
 		switchQualquer.removeAttr('checked');
 		
 	}
 	else
 	{
-		send('Coleira desativada');//lá no arduino tem que capturar os valores
+		send('#g0');//lá no arduino tem que capturar os valores
 		switchQualquer.attr('checked')	
 		
 	}
@@ -71,13 +71,13 @@ function connect() {
 
 // Solicitação para selecionar um dispositivo Bluetooth
 function requestBluetoothDevice() {
-  log('Solicitando dispositivo bluetooth');
+  log('Requesting bluetooth device...');
 
   return navigator.bluetooth.requestDevice({
     filters: [{services: [0xFFE0]}],
   }).
       then(device => {
-        log('"' + device.name + 'dispositivo bluetooth selecionado');
+        log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
@@ -91,7 +91,7 @@ function handleDisconnection(event) {
   let device = event.target;
 
   log('"' + device.name +
-      '" dispositivo bluetooth desconectado, tentando reconectar...');
+      '" bluetooth device disconnected, trying to reconnect...');
 
   connectDeviceAndCacheCharacteristic(device).
       then(characteristic => startNotifications(characteristic)).
@@ -104,21 +104,21 @@ function connectDeviceAndCacheCharacteristic(device) {
     return Promise.resolve(characteristicCache);
   }
 
-  log('Conectando com o bluetooth...');
+  log('Connecting to GATT server...');
 
   return device.gatt.connect().
       then(server => {
-        log('bluetooth conectado, recebendo dados...');
+        log('GATT server connected, getting service...');
 
         return server.getPrimaryService(0xFFE0);
       }).
       then(service => {
-        log('Dados encontrados, Atualizando informações do "Puppy Care"...');
+        log('Service found, getting characteristic...');
 
         return service.getCharacteristic(0xFFE1);
       }).
       then(characteristic => {
-        log('Informações atualizadas. ');
+        log('Characteristic found');
         characteristicCache = characteristic;
 
         return characteristicCache;
