@@ -127,11 +127,11 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 // Habilitando o recebimento de notificações sobre a mudança da característica
 function startNotifications(characteristic) {
-  log('Iniciando notificações');
+  log('Starting notifications...');
 
   return characteristic.startNotifications().
       then(() => {
-        log('Notificações iniciadas');
+        log('Notifications started');
         characteristic.addEventListener('characteristicvaluechanged',
             handleCharacteristicValueChanged);
       });
@@ -172,11 +172,11 @@ function disconnect() {
 
     if (deviceCache.gatt.connected) {
       deviceCache.gatt.disconnect();
-      log('"' + deviceCache.name + '"dispositivo bluetooth desconectado');
+      log('"' + deviceCache.name + '" bluetooth device disconnected');
     }
     else {
       log('"' + deviceCache.name +
-          '" dispositivo bluetooth já está desconectado');
+          '" bluetooth device is already disconnected');
     }
   }
 
@@ -196,7 +196,7 @@ function send(data) {
 	try
 	{
 	  if (!data || !characteristicCache) {
-		log("Você precisa conectar o bluetooth primeiro",'out');
+		log("Conectou???",'out');
 		return;
 	  }
 
