@@ -3,7 +3,7 @@
   "lang": "en",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "./",
+  "start_url": "/mobile.github.io/designpwa/",
   "scope": "./",
   "name": "Puppy Care",
   "short_name": "Puppy Care",
