@@ -12,13 +12,13 @@ function MudouSwitch()
 {
 	if(switchQualquer.checked)
 	{
-		send('#g1');//lá no arduino tem que capturar os valores
+		send('Coleira ligada');//lá no arduino tem que capturar os valores
 		switchQualquer.removeAttr('checked');
 		
 	}
 	else
 	{
-		send('#g0');//lá no arduino tem que capturar os valores
+		send('Coleira desligada');//lá no arduino tem que capturar os valores
 		switchQualquer.attr('checked')	
 		
 	}
@@ -71,13 +71,13 @@ function connect() {
 
 // Solicitação para selecionar um dispositivo Bluetooth
 function requestBluetoothDevice() {
-  log('Requesting bluetooth device...');
+  log('Buscando dispositivo bluetooth...');
 
   return navigator.bluetooth.requestDevice({
     filters: [{services: [0xFFE0]}],
   }).
       then(device => {
-        log('"' + device.name + '" bluetooth device selected');
+        log('"' + device.name + '" Dispositivo bluetooth selecionado');
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
@@ -85,7 +85,7 @@ function requestBluetoothDevice() {
         return deviceCache;
       });
 }
-
+_________________________________________________________________________________________
 // Desconecta o manipulador
 function handleDisconnection(event) {
   let device = event.target;
