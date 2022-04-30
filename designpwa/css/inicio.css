@@ -1,6 +1,6 @@
 header{
   background-color: #364E68;
-  font-family: ´Nunito´;
+  font-family: 'Nunito', sans-serif;
 }
 
 * {
@@ -9,7 +9,7 @@ header{
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Nunito";
+    font-family: "Nunito",sans-serif;
 }
 body {
     background: #425971;

@@ -6,7 +6,7 @@
 
 body {
   background-color: #DFE3E8;
-  font-family:'Nunito Sans', sans-serif;
+  font-family:'Nunito', sans-serif;
   color: #425971;
 }
 
@@ -35,7 +35,7 @@ body {
 
 
 .passos h3 {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: normal;
   padding: 20px;
 }
@@ -51,15 +51,18 @@ body {
 
 .coleirabat {
   float: left;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 40px ;
+  padding-top: 20px;
+
 }
 
  h5 {
+  padding-top: 20px;
   line-height: 20px;
   font-size: 15px;
   font-weight: normal;
-  padding-right: 45px;
+  padding-right: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -72,7 +75,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  top:700px;
+  top:680px;
   width: 280px;
   height:55px;
   color: #ffffff;
@@ -85,7 +88,7 @@ body {
   user-select: none;
   cursor: pointer;
   transition: background 0.6s;
-  font-family: 'Nunito sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: regular;
 }
 .btn a{
