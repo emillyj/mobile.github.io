@@ -10,6 +10,7 @@
   "description": "Puppy Care, Monitoramento da saúde do seu Pet",
   "theme_color": "#DFE3E8",
   "background_color": "#425971",
+  "id":"/mobile.github.io/designpwa/",
   "icons": [
     {
       "src": "icons/android-chrome-36x36.png",
