@@ -202,5 +202,10 @@ div.status{
   color: white;
 }
 
-
+.Icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 0;
+}
 
