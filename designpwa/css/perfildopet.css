@@ -16,7 +16,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 .fotodopet{
-    background-image: url(./img/cadu03.jpg);
+    background-image: url(cadu03.jpg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
