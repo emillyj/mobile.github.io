@@ -12,7 +12,7 @@ function MudouSwitch()
 {
 	if(switchQualquer.checked)
 	{
-		send('#g1');//lá no arduino tem que capturar os valores
+		send('Coleira ligada');//lá no arduino tem que capturar os valores
 		switchQualquer.removeAttr('checked');
 		
 	}
