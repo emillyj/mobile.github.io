@@ -50,10 +50,6 @@ toolbox.precache([
   'tutorialfinal.html',
 
 
-  
-  
-
-
 ]);
 
 toolbox.router.default = toolbox.networkFirst;
