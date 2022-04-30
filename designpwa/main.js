@@ -71,13 +71,13 @@ function connect() {
 
 // Solicitação para selecionar um dispositivo Bluetooth
 function requestBluetoothDevice() {
-  log('Requesting bluetooth device...');
+  log('Solicitando dispositivo bluetooth');
 
   return navigator.bluetooth.requestDevice({
     filters: [{services: [0xFFE0]}],
   }).
       then(device => {
-        log('"' + device.name + '" bluetooth device selected');
+        log('"' + device.name + 'dispositivo bluetooth selecionado');
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
@@ -91,7 +91,7 @@ function handleDisconnection(event) {
   let device = event.target;
 
   log('"' + device.name +
-      '" bluetooth device disconnected, trying to reconnect...');
+      '" dispositivo bluetooth desconectado, tentando reconectar...');
 
   connectDeviceAndCacheCharacteristic(device).
       then(characteristic => startNotifications(characteristic)).
@@ -104,21 +104,21 @@ function connectDeviceAndCacheCharacteristic(device) {
     return Promise.resolve(characteristicCache);
   }
 
-  log('Connecting to GATT server...');
+  log('Conectando com o bluetooth...');
 
   return device.gatt.connect().
       then(server => {
-        log('GATT server connected, getting service...');
+        log('bluetooth conectado, recebendo dados...');
 
         return server.getPrimaryService(0xFFE0);
       }).
       then(service => {
-        log('Service found, getting characteristic...');
+        log('Dados encontrados, Atualizando informações do "Puppy Care"...');
 
         return service.getCharacteristic(0xFFE1);
       }).
       then(characteristic => {
-        log('Characteristic found');
+        log('Informações atualizadas. ');
         characteristicCache = characteristic;
 
         return characteristicCache;
