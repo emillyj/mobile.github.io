@@ -5,12 +5,14 @@
 }
 
 body {
-	background-color: #425971;
+	background-color: #DFE3E8;
 	font-family:'Nunito Sans', sans-serif;
 }
 
 .instrucoes .logo {
-	margin: 30px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 .balao {
@@ -59,7 +61,7 @@ body {
 	color: #DFE3E8;
 	border-radius: 15px;
 	font-size: 1.5rem;
-	background-color: #98CCD3;
+	background-color: #425971;
 	margin-bottom: 15px;
 	border: none;
 	text-align: center;
@@ -75,15 +77,14 @@ body {
 }
 .pular {
 	cursor: pointer;
-	color: white;
 	font-size: 1.3rem;
 	text-align: center;
-	display:block;
-	padding-top: 410px;
 	font-family: 'Nunito sans', sans-serif;
 	font-weight: regular;
-	color: #98CCD3;
-
+	color: #425971;
+	position: absolute;
+    top: 88%;
+    width: 100%;
 }
 
 .mascote {
@@ -92,4 +93,10 @@ body {
 	right: 0;
 	margin: auto;
 	top:400px;
+}
+.icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 0;
 }

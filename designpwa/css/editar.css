@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFE3E8;
+    font-family: 'Nunito', sans-serif;
+}
+.icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;    
+}
+.edit{
+position: absolute;
+  top: 8px;
+  right: 16px;   
+}
+form{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.cadu{
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:0;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
+    
+}
+.single-input{
+    position: relative;
+    margin: 30px 0;
+}
+.single-input label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150,150,150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    background-color: #DFE3E8;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid #364E68;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #364E68;
+}
+ button {
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:30px;
+    width: 250px;
+    height:55px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    background-color: #364E68;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.6s;
+    font-family: 'Nunito sans', sans-serif;
+    font-weight: 300;
+}
+
+button:hover {
+    letter-spacing: 0.5px;
+    background: #4C596A;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

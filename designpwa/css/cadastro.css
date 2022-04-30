@@ -204,3 +204,9 @@ button:hover {
   font-size: 15px;
 
 }
+.icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 0;
+}

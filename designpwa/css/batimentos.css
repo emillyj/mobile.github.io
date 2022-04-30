@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+  background-color: #EBF0F6;
+  min-height: 70vh;
+    min-width: 70vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  background-color: #98CCD3;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 10%;
+  right: 17%;
+  width: 280px;
+  height: 50px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 2px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  padding: 2rem;
+  padding-bottom: 190px;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -5px;
+}
+
+
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #707070;
+  opacity: 0.8;
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*--------------------------------------------*/
+
+.btn-group .button {
+  background-color: #98CCD3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  border-radius: 30px;
+}
+
+.btn-group .button:hover {
+  background-color: #374F69;
+}
+.baixar {
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+    right: 13%;
+    margin: auto;
+    width: 300px;
+    height:55px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    background-color: #4C596A;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.6s;
+    font-family: 'Nunito sans', sans-serif;
+    font-weight: 300;
+}
+
+.baixar:hover {
+    letter-spacing: 0.5px;
+    background: #364E68;
+}
+.baixar a{
+  text-decoration: none;
+  color: #DFE3E8;
+ }
+ img{
+  align-items: center;
+  justify-content: center;
+ }
+
+/*------------------------TAB---------------------*/
+
+ * {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #98CCD3;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+  margin-top: 35px;
+  border-radius:15px;
+}
+
+.tablink:hover {
+  background-color: #94C6CD;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  background-color:#DFE3E8;
+}
+
+#Home {background-color: #DFE3E8;}
+#News {background-color: #DFE3E8;}
+
+
+/*------------------- SEMANA MES ANO------------------------*/
+.navbar {
+  width: 350px;
+  background-color: #98CCD3;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active{
+  background-color: #364E68;
+  
+}
+.grafico{
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: inline-block;
+  }
+}
+
+
+.icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 0;
+}
+
+h1{
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #374F69;
+    opacity: 52%;
+}
+/*----------------------1-----------------------*/
+div.pulsacao img{
+    width: 200px;
+    height: 200px;
+    background-color: #364E68;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    animation-name: animacao-pulsacao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes animacao-pulsacao{
+    0%{
+        box-shadow: 0 0 0 0px #364e68;
+    }
+    100%{
+        box-shadow: 0 0 0 40px #98CCD3;
+    }
+}
+.bpm{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #374F69;
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+}
+/*---------------------2----------------------*/
+div.pulsacaoo img{
+    width: 200px;
+    height: 200px;
+    background-color: #364E68;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    animation-name: animacao-pulsacaoo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes animacao-pulsacaoo{
+    0%{
+        box-shadow: 0 0 0 0px #364e68;
+    }
+    100%{
+        box-shadow: 0 0 0 40px #98CCD3;
+    }
+}
+.min{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #374F69;
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+}

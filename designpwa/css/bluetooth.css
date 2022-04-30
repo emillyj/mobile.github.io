@@ -1,11 +1,11 @@
-*{
+2*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 body {
-	background-color: #425971;
+	background-color: #DFE3E8;
 	font-family:'Nunito Sans', sans-serif;
 }
 
@@ -59,7 +59,7 @@ body {
 	color: #ffffff;
 	border-radius: 15px;
 	font-size: 1.5rem;
-	background-color: #98CCD3;
+	background-color: #4D6279;
 	margin-bottom: 15px;
 	border: none;
 	text-align: center;

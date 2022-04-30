@@ -27,17 +27,26 @@ position: absolute;
 form{
     position: absolute;
     top: 15%;
-    left: 25%;
+    left: 20%;
 }
 .foto{
-    align-content: center;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border:0;
-    text-align: center;
-    justify-content: center;
+    border: solid;
+    border-color: #4C596A;
+    background-color: #DFE3E8;
+    margin-left: 20px;
+    opacity: 59%;
 }
+.inputt{
+  position: absolute;
+  top: 17%;
+  width: 100%;
+  color: #DFE3E8;
+  margin-left: 40px;
+}
+
 .single-input{
     position: relative;
     margin: 30px 0;

@@ -26,9 +26,10 @@ h1{
 h4{
     color: #EBF0F6;
     font-weight: normal;
+    margin-left: 1px;
     font-size: 22px;
-    margin-top: 15px;
-    text-align: center;
+    margin-left: 20px;
+    margin-top: -15px;
 }
 
 .puppy{
@@ -51,7 +52,7 @@ main.container {
 
 #username{
     background-color: #DFE3E8;
-    padding-top: 10px;
+    padding-top: 100px;
 }
 #password{
     background-color: #DFE3E8;
@@ -181,9 +182,14 @@ button:hover {
     margin-left: 0px;
     margin-right: 0px;
     margin: auto;
-    padding-bottom: 90px;
 }
  #entrar a{
-  text-decoration: none;
-  color: #DFE3E8;
+ 	text-decoration: none;
+ 	color: #DFE3E8;
  }
+.icon{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 0;
+}
