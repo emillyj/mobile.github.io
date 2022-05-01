@@ -22,7 +22,7 @@ body {
 .flex {
 	display: flex;
 	align-items: center;
-	margin-top: 130px;
+	margin-top: 110px;
 	margin-bottom: 30px;
 }
 
@@ -36,9 +36,9 @@ body {
 
 h1 {
 line-height: 28px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: normal;
-  padding-left: 40px;
+  padding-left: 20px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ line-height: 28px;
   user-select: none;
   cursor: pointer;
   transition: background 0.6s;
-  font-family: 'Nunito sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: regular;
 }
 
@@ -95,7 +95,7 @@ h3 {
 .ligar {
 	display: flex;
 	margin-bottom: 50px;
-	 margin-top: 30px;
+	 margin-top: 15px;
 }
 
 .switch {
@@ -108,7 +108,7 @@ h3 {
 
 h2{
 	line-height: 28px;
-	  font-size: 25px;
+	  font-size: 23px;
 	  font-weight: normal;
 	  align-items: center;
 	  flex-direction: column;
@@ -187,7 +187,7 @@ div.status{
 	border-radius: 15px;
 	font-size: 1.5rem;
 	background-color: #4D6279;
-	margin-bottom:40px;
+	margin-bottom:4px;
 	border: none;
 	text-align: center;
 	user-select: none;
@@ -209,3 +209,6 @@ div.status{
   margin: 0;
 }
 
+.voltar {
+	margin: 10px;
+}

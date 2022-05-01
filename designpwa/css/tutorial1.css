@@ -97,13 +97,7 @@ body {
 	margin: auto;
 	top:360px;
 }
-.icon{
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  margin: 0;
-}
 
-.voltar {
+.volta {
 	margin: 10px;
 }
