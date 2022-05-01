@@ -77,11 +77,11 @@ body{
   background-color: #98CCD3; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   float: left;
   border-radius: 30px;
@@ -146,11 +146,11 @@ body, html {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 45%;
+  width: 42%;
   margin-top: 55px;
   border-radius:20px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
 
 }
 
@@ -223,15 +223,15 @@ h1{
     text-align: left;
     margin-top: 75px;
     margin-left: 5px;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: normal;
     color: #374F69;
     opacity: 80%;
 }
 /*----------------------1-----------------------*/
 div.pulsacao img{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     background-color: #364E68;
     border-radius: 50%;
 
@@ -257,7 +257,7 @@ div.pulsacao img{
 }
 .bpm{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     color: #374F69;
     position: absolute;
