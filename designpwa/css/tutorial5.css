@@ -75,7 +75,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  top:680px;
+  top:670px;
   width: 280px;
   height:55px;
   color: #ffffff;
@@ -106,9 +106,7 @@ label {
 input {
     margin: .4rem;
 }
-.icon{
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  margin: 0;
+
+.voltar{
+  margin: 10px;
 }
