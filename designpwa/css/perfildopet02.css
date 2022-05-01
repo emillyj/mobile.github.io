@@ -42,7 +42,11 @@ h4{
   color: #DFE3E8;
   margin-left: 30px;
 }
-.btn{
+.btn1{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: block;
   padding: 10px 8px;
   width: 280px;
@@ -58,10 +62,34 @@ h4{
   font-family: 'Nunito', sans-serif;
   font-weight: regular;
 }
-.btn: hover{
+
+.btn2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 65px;
+  display: block;
+  padding: 10px 8px;
+  width: 280px;
+  color: #364E68;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  background-color: #DFE3E8;
+  margin-bottom: 15px;
+  border: none;
+  text-align: center;
+  user-select: none;
+  transition: background 0.6s;
+  font-family: 'Nunito', sans-serif;
+  font-weight: regular;
+}
+
+.btn1, .btn2: hover{
   background-color: #364E68;
   color: #DFE3E8;
 }
+
 .escolha{
   margin: auto;
   width: 60%;
