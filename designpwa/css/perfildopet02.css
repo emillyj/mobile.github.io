@@ -21,7 +21,7 @@ body {
     background-position: center;
     width: 100%;
     padding: 2rem;
-    padding-bottom: 490px;
+    padding-bottom: 480px;
     box-shadow: 5px 5px 15px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 80px 80px;
     margin-top: -5px;
@@ -73,8 +73,8 @@ h4{
 }
 .fotodopet .editar{
   position: absolute;
-  bottom: -1%;
-  left: 35%;
+  bottom: 28%;
+  left: 55%;
 }
 .desc{
   position: absolute;
