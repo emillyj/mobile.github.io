@@ -28,6 +28,7 @@ body {
 	right: 10px;
 	margin: auto; 
 	margin-top: 35px;
+	box-shadow: 2px 2px 20px rgba(5,35,4,0.2);
 }
 
 .balao p {
