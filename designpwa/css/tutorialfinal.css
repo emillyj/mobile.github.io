@@ -6,36 +6,41 @@
 
 body {
   background-color: #DFE3E8;
-  font-family:'Nunito Sans', sans-serif;
+  font-family:'Nunito', sans-serif;
 }
+
 
 .instrucoes .logo {
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 20px;
+  right: 25px;
 }
+
 
 .balao {
   background:white;
-  width: 350px;
+  width: 310px;
   text-align: center;
   line-height: 23px;  
   border-radius: 48%;
-  height: 240px;
+  height: 260px;
   position: relative;
   left: -15px;
   right: 0;
   margin: auto;
-  top:80px;    
+  top:100px;    
 }
-
 .balao p {
-  font-size: 21px;
+  
   position: relative;
-  top: 50px;
-  line-height: 30px;
+  margin: auto;
+  justify-content: center;
   color: #425971;
-  font-family: Nunito sans, sans-serif;
+  font-family: Nunito, sans-serif;
+  justify-content: center;
+  top: 60px;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .balao::before{
@@ -45,8 +50,8 @@ body {
     border-right: 40px solid transparent ;
     border-top: 40px solid white;
     border-bottom: 20px transparent;
-    left: 190px;
-    top: 230px;
+    left: 160px;
+    top: 250px;
     -webkit-transform: translate(10px) rotate(344deg)
 }
 
@@ -68,7 +73,7 @@ body {
   user-select: none;
   cursor: pointer;
   transition: background 0.6s;
-  font-family: 'Nunito sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: regular;
  }
 .btn a{
@@ -80,11 +85,12 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  top:510px;
+  top:470px;
 }
 .icon{
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  margin: 0;
+  position: absolute; 
+}
+
+.volta{
+  margin: 10px;
 }
