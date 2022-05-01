@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .icon{
   position: absolute;
   top: 8px;
@@ -46,10 +47,9 @@ div.scrollmenu a:hover {
   display: inline-block;
 
 }
-.ano:  {
+.ano {
   background-color: #364E68;
 }
-
 
 
 .container{
@@ -130,7 +130,7 @@ h3{
 }
 #obs{
   position: absolute;
-  top:65%;
+  top:68%;
   left:35%;
   widht:100%;
   color: grey;
