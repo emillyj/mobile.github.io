@@ -12,7 +12,7 @@ body {
 .instrucoes .logo {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 25px;
 }
 
 .balao {
@@ -23,7 +23,7 @@ body {
   border-radius: 48%;
   height: 220px;
   position: relative;
-  left: 10px;
+  left: 4px;
 	right: 0;
 	margin: auto;
 	top:20px;    
