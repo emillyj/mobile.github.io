@@ -41,7 +41,7 @@ body{
 /* Add styles to the form container */
 .form-container {
   background-color: white;
-  width: 100%;
+  width: 95%;
   height: 600px;
   padding: 2rem;
   padding-bottom: 190px;
@@ -59,7 +59,7 @@ body{
   color: white;
   position: absolute;
   top: 8px;
-  right: 16px;
+  right: 30px;
   cursor: pointer;
   border: none;
   width: 30px;
