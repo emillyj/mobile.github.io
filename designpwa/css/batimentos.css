@@ -198,6 +198,10 @@ body, html {
   align-items: center;
   text-align: center;
 }
+
+.active {
+  background-color: #364E68;
+}
   
 
 .grafico{
