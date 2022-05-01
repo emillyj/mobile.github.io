@@ -187,16 +187,19 @@ body, html {
   font-size: 17px;
   margin-left: 25px;
   margin-right: 10px;
+  border-radius: 15px;
+
 }
 
 .navbar a:hover {
-  background-color: #000;
+  background-color: #374F69;
+  display: inline-block;
+  width: 85px;
+  align-items: center;
+  text-align: center;
 }
-
-.active{
-  background-color: #364E68;
   
-}
+
 .grafico{
   position: absolute;
   top: 30%;
