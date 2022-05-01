@@ -52,7 +52,7 @@ body {
 }
 	  
 
-.btn1 {
+.btn {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -72,32 +72,9 @@ body {
 	transition: background 0.6s;
 	font-family: 'Nunito sans', sans-serif;
 	font-weight: regular;
+	
 }
-
-.btn2{
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-	top:760px;
-	width: 280px;
-	height:55px;
-	color: #ffffff;
-	border-radius: 15px;
-	font-size: 1.5rem;
-	background-color: #425971;
-	margin-bottom: 15px;
-	border: none;
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-	transition: background 0.6s;
-	font-family: 'Nunito sans', sans-serif;
-	font-weight: regular;
-
-}
-
-.btn1, .btn2 a{
+.btn a{
   text-decoration: none;
   color: white;
 }
